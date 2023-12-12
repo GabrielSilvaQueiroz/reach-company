@@ -1,0 +1,55 @@
+/* Estilização da página index.html, controlando a cor, largura, altura, borda e alinhamento do texto */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+/* Importando uma fonte chamada Inter, diretamente do Google Fonts, responsável por estilizar o formato do texto */
+
+body {
+    background-image: url(/assets/loja-de-roupa-2.jpg);
+    /* Importando a foto que ficará no fundo da página, a foto está localizada na pasta assets */
+    font-family: 'Inter', sans-serif;
+    background-size: cover;
+}
+
+.div1 {
+    position: fixed;
+    opacity: 0.9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 700px;
+    height: 300px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+h1 {
+    color: black;
+    margin-top: 45px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h2 {
+    color: black;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+    opacity: 1.1;
+}
+
+button:hover {
+    color: gray;
+    background-color: black;
+}

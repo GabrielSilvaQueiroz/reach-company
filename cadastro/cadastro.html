@@ -1,0 +1,100 @@
+<!-- Página de Cadastro, onde o usuário irá informar seus dados. -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>REACH Cadastro</title>
+</head>
+
+<body>
+    <div class="form">
+        <form>
+            <!-- Criação do formulário -->
+            <div class="title-form">
+                <h1>Cadastre-se</h1>
+                <!-- Titúlo do formulário -->
+            </div>
+
+            <div class="input-group">
+                <!-- Criação da divisisória que irá agrupar todos os input's para entrada de dados. -->
+                <div class="input-box">
+                    <!-- Criação da divisória input box, ou seja, todos os inputs que tem uma caixa de texto -->
+                    <label> Primeiro Nome </label>
+                    <input id="firstName" type="text" name="firstName" placeholder="Digite seu primeiro nome">
+                </div>
+                <!-- Informando o id do input, o tipo dele e seu nome. Placeholder é aquele texto que fica dentro da caixa -->
+
+                <div class="input-box">
+                    <label for="lastName">Sobrenome</label>
+                    <input id="lastName" type="text" name="lastName" placeholder="Digite seu sobrenome">
+                </div>
+                <div class="input-box">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" name="email" placeholder="Digite seu e-mail">
+                </div>
+
+                <div class="input-box">
+                    <label for="number">Celular</label>
+                    <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx">
+                </div>
+
+                <div class="input-box">
+                    <label for="password">Senha</label>
+                    <input id="password" type="password" name="password" placeholder="Digite sua senha">
+                </div>
+
+
+                <div class="input-box">
+                    <label for="confirmPassword">Confirme sua Senha</label>
+                    <input id="confirmPassword" type="password" name="confirmPassword"
+                        placeholder="Digite sua senha novamente">
+                </div>
+
+            </div>
+
+            <div class="gender-inputs">
+                <!-- Criação da divisória total responsável pelo input de gênero -->
+                <div class="gender-title">
+                    <h6>Gênero</h6>
+                    <!-- Criação do título, dentro de uma divisória -->
+                </div>
+
+                <div class="gender-group">
+                    <div class="gender-input">
+                        <!-- Divisórias responsáveis por armazenar todos os input de gênero com a opção de marcar -->
+                        <input id="female" type="radio" name="gender">
+                        <label for="female">Feminino</label>
+                    </div>
+
+                    <div class="gender-input">
+                        <input id="male" type="radio" name="gender">
+                        <label for="male">Masculino</label>
+                    </div>
+
+                    <div class="gender-input">
+                        <input id="others" type="radio" name="gender">
+                        <label for="others">Outros</label>
+                    </div>
+
+                    <div class="gender-input">
+                        <input id="none" type="radio" name="gender">
+                        <label for="none">Prefiro não dizer</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="continue-button">
+                <button>
+                    <a href="/concluido/concluido.html"> Continuar
+                </button> </a>
+                <!-- Criação do botão e referênciando o mesmo a próxima página de cadastro concluido -->
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
